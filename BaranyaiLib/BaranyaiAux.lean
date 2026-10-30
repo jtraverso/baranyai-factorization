@@ -5,8 +5,9 @@ Authors: Juan Pablo Traverso Gianini
 -/
 module
 
-public import Mathlib
 public import BaranyaiLib.Rounding
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Data.Fintype.Fin
 
 /-!
 # Auxiliary material for Baranyai's theorem

@@ -5,7 +5,6 @@ Authors: Juan Pablo Traverso Gianini
 -/
 module
 
-public import Mathlib
 public import FlowLib.MaxFlowMinCut
 public import BaranyaiLib.IntegralFlow
 
