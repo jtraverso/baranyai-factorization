@@ -8,11 +8,11 @@ module
 public import BaranyaiLib.Baranyai
 
 /-!
-# Proofs of the statements in `Challenge.lean`
+# Proofs of the statements in `BaranyaiChallenge.lean`
 
 The theorems are proved in `BaranyaiLib/` (namespace `Baranyai`), on top of the author's finite
-max-flow/min-cut theorem (`FlowLib/MaxFlowMinCut.lean`, from the registered entry
-PALOMAR-2026-10-15-000008, included unchanged). `IntegralFlow.lean` proves that a network with
+max-flow/min-cut theorem (`LeanPool.MaxFlowMinCut` of the registered entry
+PALOMAR-2026-10-15-000008, a pinned dependency). `IntegralFlow.lean` proves that a network with
 integer capacities has an integral maximum flow (Ford–Fulkerson with unit augmentations);
 `Rounding.lean` derives the rounding lemma from it (a transportation network, after adding a slack
 row and column so that all line sums are integers); `BaranyaiAux.lean` proves Baranyai's theorem

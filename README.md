@@ -14,20 +14,19 @@ All statements are in the namespace `BaranyaiTheorem`:
    `k`-subset in exactly one class. In other words the complete `k`-uniform hypergraph `K_n^(k)`
    has a 1-factorization.
 
-The definition `IsParallelClass` is stated in `Challenge.lean`; `comparator.json` selects only the
+The definition `IsParallelClass` is stated in `BaranyaiChallenge.lean`; `comparator.json` selects only the
 theorems, and the definition enters the check only as part of the theorem statement that uses it.
 Mathlib has neither result.
 
 ## Files
 
-- [`Challenge.lean`](Challenge.lean): the definition and the audited statements. It imports only
-  Mathlib.
-- [`Solution.lean`](Solution.lean), [`BaranyaiLib/`](BaranyaiLib) and
-  [`FlowLib/MaxFlowMinCut.lean`](FlowLib/MaxFlowMinCut.lean): the proofs. `FlowLib` is the
-  author's finite max-flow/min-cut theorem from the registered entry
+- [`BaranyaiChallenge.lean`](BaranyaiChallenge.lean): the definition and the audited statements.
+  It imports only Mathlib.
+- [`BaranyaiSolution.lean`](BaranyaiSolution.lean) and [`BaranyaiLib/`](BaranyaiLib): the proofs.
+  They use the author's finite max-flow/min-cut theorem (`LeanPool.MaxFlowMinCut`) from the
+  registered entry
   [PALOMAR-2026-10-15-000008](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-15-000008&version=1),
-  included with its namespace renamed to `BaranyaiTheorem.Flow` (otherwise unchanged), so that
-  no declaration of a registered entry is repeated.
+  a pinned dependency (jtraverso/dross-fractional-triangle-decomposition @ `7720b7b`).
 - [`comparator.json`](comparator.json): the theorems that are compared.
 - [`MATHLIB_DEFINITIONS.md`](MATHLIB_DEFINITIONS.md): verbatim copies of the Mathlib definitions
   used.
@@ -39,7 +38,7 @@ Mathlib has neither result.
   flow whose value is at least that of every real flow. Take an integral flow of largest value;
   if the sink were still reachable in the residual graph, pushing one unit along an augmenting
   path would give a larger one, so the reachable set is a saturated cut and the flow is maximum
-  by the max-flow/min-cut theorem of `FlowLib`.
+  by the max-flow/min-cut theorem of `LeanPool.MaxFlowMinCut` (dependency).
 * **Rounding** (`Rounding.lean`). A nonnegative matrix with integer entry bounds and integer line
   sums is replaced by an integral one through the network source → rows → columns → sink. For a
   general matrix, a slack row and a slack column make every line sum an integer; the fractional

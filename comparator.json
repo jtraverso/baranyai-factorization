@@ -1,6 +1,6 @@
 {
-  "challenge_module": "Challenge",
-  "solution_module": "Solution",
+  "challenge_module": "BaranyaiChallenge",
+  "solution_module": "BaranyaiSolution",
   "theorem_names": [
     "BaranyaiTheorem.rounding",
     "BaranyaiTheorem.baranyai"

@@ -5,7 +5,7 @@ Authors: Juan Pablo Traverso Gianini
 -/
 module
 
-public import FlowLib.MaxFlowMinCut
+public import LeanPool.MaxFlowMinCut
 
 /-!
 # Integral maximum flows
@@ -18,7 +18,7 @@ For a network with integer capacities there is an integer-valued flow of maximum
 
 namespace Baranyai
 
-open BaranyaiTheorem.Flow Finset
+open Contrib.MaxFlowMinCut Finset
 
 variable {N : Type*} [Fintype N] [DecidableEq N]
 

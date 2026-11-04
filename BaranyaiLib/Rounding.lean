@@ -5,7 +5,7 @@ Authors: Juan Pablo Traverso Gianini
 -/
 module
 
-public import FlowLib.MaxFlowMinCut
+public import LeanPool.MaxFlowMinCut
 public import BaranyaiLib.IntegralFlow
 
 /-!
@@ -19,7 +19,7 @@ Baranyai's rounding lemma for real matrices indexed by arbitrary finite types.
 
 namespace Baranyai
 
-open BaranyaiTheorem.Flow Finset
+open Contrib.MaxFlowMinCut Finset
 
 section Transport
 

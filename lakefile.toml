@@ -1,6 +1,6 @@
 name = "baranyai_factorization"
 version = "0.1.0"
-defaultTargets = ["FlowLib", "BaranyaiLib", "Challenge", "Solution"]
+defaultTargets = ["BaranyaiLib", "BaranyaiChallenge", "BaranyaiSolution"]
 requiresModuleSystem = true
 
 [leanOptions]
@@ -12,18 +12,19 @@ name = "mathlib"
 scope = "leanprover-community"
 rev = "v4.35.0-rc3"
 
-[[lean_lib]]
-name = "FlowLib"
-globs = ["FlowLib.+"]
+[[require]]
+name = "dross"
+git = "https://github.com/jtraverso/dross-fractional-triangle-decomposition"
+rev = "7720b7b591e606d5a56f1d935d8be650dcbf6c6f"
 
 [[lean_lib]]
 name = "BaranyaiLib"
 globs = ["BaranyaiLib.+"]
 
 [[lean_lib]]
-name = "Challenge"
-roots = ["Challenge"]
+name = "BaranyaiChallenge"
+roots = ["BaranyaiChallenge"]
 
 [[lean_lib]]
-name = "Solution"
-roots = ["Solution"]
+name = "BaranyaiSolution"
+roots = ["BaranyaiSolution"]

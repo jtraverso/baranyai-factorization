@@ -1,6 +1,6 @@
-# Mathlib definitions used in Challenge.lean (Baranyai's theorem)
+# Mathlib definitions used in BaranyaiChallenge.lean (Baranyai's theorem)
 
-Verbatim excerpts of the Mathlib definitions used by the statements in `Challenge.lean`, at the
+Verbatim excerpts of the Mathlib definitions used by the statements in `BaranyaiChallenge.lean`, at the
 pinned Mathlib revision `c55e6e786f49471c72fbddbec5415808896aec1e` (tag `v4.35.0-rc3`, repository
 https://github.com/leanprover-community/mathlib4). Mathlib is released under the Apache-2.0
 licence. Each excerpt gives the file and line at that revision; the complete source is at

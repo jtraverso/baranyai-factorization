@@ -57,10 +57,9 @@ related_formalizations:
   - id: "PALOMAR-2026-10-15-000008 (jtraverso/dross-fractional-triangle-decomposition)"
     relationship: "builds-on"
     note: >-
-      The same author's entry; its finite max-flow/min-cut theorem (`LeanPool/MaxFlowMinCut.lean`
-      there, `FlowLib/MaxFlowMinCut.lean` here) is included, with its namespace renamed from
-      `Contrib.MaxFlowMinCut` to `BaranyaiTheorem.Flow` and otherwise unchanged, and used for the
-      integral flow theorem.
+      The same author's entry, a pinned dependency (jtraverso/dross-fractional-triangle-decomposition
+      @ 7720b7b): its finite max-flow/min-cut theorem (`LeanPool.MaxFlowMinCut`, namespace
+      `Contrib.MaxFlowMinCut`) is imported, not copied, and used for the integral flow theorem.
 
 status:
   scope: >-
@@ -133,11 +132,11 @@ alignment:
   statements:
     - source: "Baranyai (1975): rounding lemma"
       lean: "BaranyaiTheorem.rounding"
-      module: "Challenge"
+      module: "BaranyaiChallenge"
       status: "proved"
     - source: "Baranyai (1975): K_n^(k) has a 1-factorization when k divides n"
       lean: "BaranyaiTheorem.baranyai"
-      module: "Challenge"
+      module: "BaranyaiChallenge"
       status: "proved"
 
 acknowledgements: >-

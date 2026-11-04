@@ -15,6 +15,18 @@
    "configFile": "lakefile.lean"
   },
   {
+   "url": "https://github.com/jtraverso/dross-fractional-triangle-decomposition",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "7720b7b591e606d5a56f1d935d8be650dcbf6c6f",
+   "name": "dross",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "7720b7b591e606d5a56f1d935d8be650dcbf6c6f",
+   "inherited": false,
+   "configFile": "lakefile.toml"
+  },
+  {
    "url": "https://github.com/leanprover-community/plausible",
    "type": "git",
    "subDir": null,
