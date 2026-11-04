@@ -26,7 +26,8 @@ Mathlib has neither result.
   [`FlowLib/MaxFlowMinCut.lean`](FlowLib/MaxFlowMinCut.lean): the proofs. `FlowLib` is the
   author's finite max-flow/min-cut theorem from the registered entry
   [PALOMAR-2026-10-15-000008](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-15-000008&version=1),
-  included unchanged.
+  included with its namespace renamed to `BaranyaiTheorem.Flow` (otherwise unchanged), so that
+  no declaration of a registered entry is repeated.
 - [`comparator.json`](comparator.json): the theorems that are compared.
 - [`MATHLIB_DEFINITIONS.md`](MATHLIB_DEFINITIONS.md): verbatim copies of the Mathlib definitions
   used.

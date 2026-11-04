@@ -18,7 +18,7 @@ For a network with integer capacities there is an integer-valued flow of maximum
 
 namespace Baranyai
 
-open Contrib.MaxFlowMinCut Finset
+open BaranyaiTheorem.Flow Finset
 
 variable {N : Type*} [Fintype N] [DecidableEq N]
 

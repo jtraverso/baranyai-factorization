@@ -28,7 +28,8 @@ public import Mathlib.Topology.MetricSpace.Bounded
 Source: url:https://github.com/jtraverso/erdos-81-chordal-clique-partitions/blob/b3423f3e8c8db7c2d1b279673293ef3079faf903/preprints/PAPER_III/05_formalization/lean_v1.4_freeze/Contrib/MaxFlowMinCut.lean
 Authors: Juan Pablo Traverso Gianini
 Status: verified
-Main declarations: `Contrib.MaxFlowMinCut.maxflow_eq_mincut`
+Main declarations: `BaranyaiTheorem.Flow.maxflow_eq_mincut` (namespace renamed from
+`Contrib.MaxFlowMinCut`, so that no declaration of a registered entry is repeated)
 Tags: combinatorial-optimization, graph-theory, network-flows
 MSC: 05C21, 90C35
 -/
@@ -59,7 +60,7 @@ The development is `sorry`-free and uses only the standard axioms
 
 @[expose] public section
 
-namespace Contrib.MaxFlowMinCut
+namespace BaranyaiTheorem.Flow
 
 /-! ## Duplicate-free chains from reflexive-transitive-closure paths -/
 
@@ -715,4 +716,4 @@ theorem maxflow_eq_mincut (Net : Network N) :
 
 end Network
 
-end Contrib.MaxFlowMinCut
+end BaranyaiTheorem.Flow

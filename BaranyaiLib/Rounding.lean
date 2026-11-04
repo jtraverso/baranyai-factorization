@@ -19,7 +19,7 @@ Baranyai's rounding lemma for real matrices indexed by arbitrary finite types.
 
 namespace Baranyai
 
-open Contrib.MaxFlowMinCut Finset
+open BaranyaiTheorem.Flow Finset
 
 section Transport
 

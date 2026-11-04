@@ -58,8 +58,9 @@ related_formalizations:
     relationship: "builds-on"
     note: >-
       The same author's entry; its finite max-flow/min-cut theorem (`LeanPool/MaxFlowMinCut.lean`
-      there, `FlowLib/MaxFlowMinCut.lean` here) is included unchanged and used for the integral
-      flow theorem.
+      there, `FlowLib/MaxFlowMinCut.lean` here) is included, with its namespace renamed from
+      `Contrib.MaxFlowMinCut` to `BaranyaiTheorem.Flow` and otherwise unchanged, and used for the
+      integral flow theorem.
 
 status:
   scope: >-
